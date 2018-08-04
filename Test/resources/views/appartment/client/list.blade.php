@@ -26,15 +26,16 @@
         </ul>
     </div>
 </nav>
-<div class="container-fluid row mt-2">
+<div class="container-fluid row">
     <div class="col-md-9">
         @foreach($list_obj as $item)
-            <div class="col-md-4 row">
-                <img src=""
+            <div class="col-md-4">
+                <img src="{{$item->images}}" width="50%"/>
+                <p>{{$item->name}}</p>
             </div>
         @endforeach
     </div>
-    <div class="col-md-3">
+    <div class="row col-md-3">
         <label>Search By Area</label>
         <ul>
             <li><a href="#"> district 1</a></li>
@@ -43,13 +44,22 @@
             <li><a href="#"> district 4</a></li>
             <li><a href="#"> district 5</a></li>
         </ul>
+        <label>Search By Area</label>
+        <ul>
+            <li><a href="#"> < 10000$</a></li>
+            <li><a href="#"> 10000 - 15000$</a></li>
+            <li><a href="#"> 15000 - 30000$</a></li>
+            <li><a href="#"> 30000 - 50000$</a></li>
+            <li><a href="#"> > 50000$</a></li>
+        </ul>
+
     </div>
 
 
 
 </div>
 
-<footer class="container-fluid mt-3 mb-3">
+<footer class="container-fluid mt-3 mb-3 text-center">
     <h3>Aptech FPT Copyright 2018</h3>
 </footer>
 </body>

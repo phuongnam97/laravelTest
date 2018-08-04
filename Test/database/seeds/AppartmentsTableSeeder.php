@@ -11,8 +11,8 @@ class AppartmentsTableSeeder extends Seeder
      */
     public function run()
     {
-        \Illuminate\Support\Facades\DB::table('appartment')->truncate();
-        \Illuminate\Support\Facades\DB::table('appartment')->insert([
+        \Illuminate\Support\Facades\DB::table('appartments')->truncate();
+        \Illuminate\Support\Facades\DB::table('appartments')->insert([
             [
                 'name'=>'Chung cư cao cấp T3 Timecity',
                 'address'=>'T3 Timecity',
